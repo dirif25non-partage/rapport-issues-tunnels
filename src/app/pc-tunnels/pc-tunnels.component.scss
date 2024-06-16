@@ -1,0 +1,21 @@
+
+.mat-mdc-row .mat-mdc-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+    height: 30px !important;
+  }
+  
+  .mat-mdc-row:hover .mat-mdc-cell {
+    border-color: rgb(3, 65, 65);
+    background-color: rgb(174, 238, 238);
+  }
+  
+  .row {
+    height: 25px ; 
+  }
+
+  .row-is-clicked {
+    font-weight: bold;
+    height: 30px !important;
+  }

@@ -1,0 +1,16 @@
+<div style="width: 40%; align-items: center;">
+<mat-grid-list cols="2" rowHeight="50px">
+  <mat-grid-tile>
+    <h3>  Visites des issues </h3>
+  </mat-grid-tile>
+  <mat-grid-tile >
+    <form>  <mat-form-field>
+      <mat-select [(value)]="pctt">
+      @for (pctt of pctts; track pctt) {  <mat-option [value]="pctt">{{pctt}}</mat-option>  }
+    </mat-select>  </mat-form-field></form> 
+  </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<pc-tunnels  [pctt]="pctt" [dernVisiteIss]="dernVisiteIss"></pc-tunnels>
+
